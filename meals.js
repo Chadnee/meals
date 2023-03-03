@@ -22,7 +22,7 @@ const displayMeals=meals =>{
               <div class="card-body">
               <h5 class="card-title"><b>${meal.strMeal}</b></h5>
                <p class="card-text">Welcome to our food-corner. Fresh and delicious ${meal.strMeal} are available only from our food-corner. Please check the details and order now.</p>
-               <button onclick ="loadMealsDetails(${meal.idMeal})" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               <hr><button onclick ="loadMealsDetails(${meal.idMeal})" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                See details
              </button>
                </div>
@@ -62,7 +62,7 @@ const displayMeals=meals =>{
         displayMealsDetails(data.meals[0]);
       }
       catch(error){
-        console.log(error)
+        console.log(error)     
       }
     }
     let price =+110;
